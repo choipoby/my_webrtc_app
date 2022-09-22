@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>WebRTC Training</title>
+</head>
+
+<body>
+    <h1>WebRTC Training</h1>
+    
+    <div id="chatLobby">
+        <label>Type room name</label>
+        <input id="roomNumber" type="text">
+        <button id="enter">Enter</button>
+    </div>
+
+    <div id="chatRoom" style="display:none">
+        <video id="localVideo" autoplay></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.3/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
